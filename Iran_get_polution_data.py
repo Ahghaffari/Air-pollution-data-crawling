@@ -40,7 +40,7 @@ def get_all_data(browser):
 
 ############################################################################
 
-year = 3
+year = 10
 month = 12
 day = 31
 hour = 24
@@ -70,7 +70,7 @@ while True:
     except TimeoutException:
         print("Loading took too much time!")
 
-for y in range(1399 - year, 1399):
+for y in range(1400 - year, 1400):
     output_path_y = output_path + "/" + str(y)
     if not os.path.exists(output_path_y):
         os.makedirs(output_path_y)
